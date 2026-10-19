@@ -11,7 +11,7 @@ reads that list from the live site and downloads any hashed file (under `_app/im
 `data/`) that it no longer builds. Only the previous deploy's own files are carried, so files
 never pile up beyond one extra generation. Failing to reach the live site never fails the deploy.
 
-    python scripts/carry_over_deploy.py site https://orginalbusta.github.io/Wholesale-inventory-analytics
+    python scripts/carry_over_deploy.py site https://aryaharsh5559.github.io/Wholesale-inventory-analytics
 """
 
 import argparse

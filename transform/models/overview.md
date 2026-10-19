@@ -28,7 +28,7 @@ much, and where is cash tied up in dead stock?**
 
 Open the lineage graph (bottom right) to follow any mart back to its raw source.
 
-Live dashboard: [https://orginalbusta.github.io/Wholesale-inventory-analytics/](https://orginalbusta.github.io/Wholesale-inventory-analytics/) (including a [what-if reorder policy](https://orginalbusta.github.io/Wholesale-inventory-analytics/what-if/) page).
-Source code, findings and design decisions: [the GitHub repo](https://github.com/orginalbusta/Wholesale-inventory-analytics) and its [decision log](https://github.com/orginalbusta/Wholesale-inventory-analytics/blob/main/docs/DECISIONS.md).
+Live dashboard: [https://aryaharsh5559.github.io/Wholesale-inventory-analytics/](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/) (including a [what-if reorder policy](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/what-if/) page).
+Source code, findings and design decisions: [the GitHub repo](https://github.com/aryaharsh5559/Wholesale-inventory-analytics) and its [decision log](https://github.com/aryaharsh5559/Wholesale-inventory-analytics/blob/main/docs/DECISIONS.md).
 
 {% enddocs %}

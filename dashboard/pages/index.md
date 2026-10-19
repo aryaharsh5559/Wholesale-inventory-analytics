@@ -106,4 +106,4 @@ order by 1
 - [Suppliers](/suppliers): on-time rates and quoted vs. actual lead times
 - [Sales & customers](/sales-and-customers): monthly trend by category and RFM segments
 
-Built with dbt, DuckDB and Evidence. [dbt docs and lineage](https://orginalbusta.github.io/Wholesale-inventory-analytics/dbt-docs/) are published alongside this dashboard.
+Built with dbt, DuckDB and Evidence. [dbt docs and lineage](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/dbt-docs/) are published alongside this dashboard.

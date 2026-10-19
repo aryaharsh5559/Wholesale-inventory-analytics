@@ -1,10 +1,10 @@
 # Craftstones Data Platform: An Ideal-State Redesign
 
-[![ci](https://github.com/orginalbusta/Wholesale-inventory-analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/orginalbusta/Wholesale-inventory-analytics/actions/workflows/ci.yml)
-[![deploy](https://github.com/orginalbusta/Wholesale-inventory-analytics/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/orginalbusta/Wholesale-inventory-analytics/actions/workflows/deploy-pages.yml)
+[![ci](https://github.com/aryaharsh5559/Wholesale-inventory-analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/aryaharsh5559/Wholesale-inventory-analytics/actions/workflows/ci.yml)
+[![deploy](https://github.com/aryaharsh5559/Wholesale-inventory-analytics/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/aryaharsh5559/Wholesale-inventory-analytics/actions/workflows/deploy-pages.yml)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-**[Live dashboard](https://orginalbusta.github.io/Wholesale-inventory-analytics/)** · **[What-if reorder policy](https://orginalbusta.github.io/Wholesale-inventory-analytics/what-if/)** · **[dbt docs & lineage](https://orginalbusta.github.io/Wholesale-inventory-analytics/dbt-docs/)**
+**[Live dashboard](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/)** · **[What-if reorder policy](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/what-if/)** · **[dbt docs & lineage](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/dbt-docs/)**
 
 **New here?** [How it works in 2 minutes](docs/HOW_IT_WORKS.md): the pipeline top down, the tools and skills behind each layer, and the main design decisions.
 
@@ -20,10 +20,10 @@ It centers on the decision that matters most to a distributor: **which products 
 
 - **The pipeline:** a seeded Python generator produces messy ERP-style data (plus public FRED data) → **dlt** loads it raw → **dbt** builds tested staging, intermediate and contract-enforced mart layers → an **Evidence** dashboard and dbt docs on GitHub Pages, rebuilt every night. **Dagster** orchestrates it with end-to-end lineage.
 - **The proof it works:** 214 dbt data tests and 8 unit tests, 67 pytest tests (including checks that the analysis recovers the generator's hidden truth), CI on every pull request, and every planted data-quality problem fixed or caught.
-- **Interactive:** change the reorder policy on the [what-if page](https://orginalbusta.github.io/Wholesale-inventory-analytics/what-if/) and every SKU's safety stock, reorder point and order quantity is recalculated in your browser; every SKU has its own [drill-down page](https://orginalbusta.github.io/Wholesale-inventory-analytics/sku/).
+- **Interactive:** change the reorder policy on the [what-if page](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/what-if/) and every SKU's safety stock, reorder point and order quantity is recalculated in your browser; every SKU has its own [drill-down page](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/sku/).
 - **Portable:** the same project runs on Snowflake, where all 18 marts came out identical to DuckDB.
 
-[![What-if reorder policy page: raising the A-class service level to 99% and the cash it ties up](docs/images/what-if.png)](https://orginalbusta.github.io/Wholesale-inventory-analytics/what-if/)
+[![What-if reorder policy page: raising the A-class service level to 99% and the cash it ties up](docs/images/what-if.png)](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/what-if/)
 
 *The what-if page with A-class SKUs moved to a 99% service level: 12 more SKUs to reorder now and $181k more cash in safety stock.*
 
@@ -41,7 +41,7 @@ From the medium-scale simulation (3 years, 1,200 SKUs, 650 customers, 60 supplie
 4. **Revenue is concentrated, and some of it is slipping away.** The top 20% of SKUs bring in 81% of revenue. 184 "Champion" customers account for 59% of the last 12 months' revenue, while 78 "At Risk" customers who used to order often, worth $2.4M over the last 12 months, have gone quiet. *Decision:* give sales reps the At Risk list as a call list. *Source:* `mart_customer_rfm`.
 5. **Service level is a cash decision, and the dashboard prices it.** Raising every A-class SKU from today's 95-98% target to 99% adds $181k (+23%) of A-class safety stock and puts 12 more SKUs on today's reorder list; cutting C-class SKUs to 80% frees only $15k. *Decision:* set service levels per class deliberately, with the cost in view, instead of one blanket rule. *Source:* the what-if page, which recalculates `mart_reorder_recommendations` with the same formulas (a test checks they agree).
 
-[![Dashboard overview: revenue and margin by month with gem-show bands, inventory value, dead stock and A-class SKUs to reorder](docs/images/dashboard-overview.png)](https://orginalbusta.github.io/Wholesale-inventory-analytics/)
+[![Dashboard overview: revenue and margin by month with gem-show bands, inventory value, dead stock and A-class SKUs to reorder](docs/images/dashboard-overview.png)](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/)
 
 *The dashboard overview on the same snapshot as the findings above (the live site keeps advancing nightly).*
 
@@ -115,7 +115,7 @@ The synthetic ERP export contains ten deliberately planted problems that real di
 Needs Python 3.12 (installed automatically by [uv](https://docs.astral.sh/uv/)), Node.js 20+ for the dashboard, and `make` (no `make` on Windows? each target is a one-line command in the [Makefile](Makefile); run it directly).
 
 ```bash
-git clone https://github.com/orginalbusta/Wholesale-inventory-analytics.git
+git clone https://github.com/aryaharsh5559/Wholesale-inventory-analytics.git
 cd Wholesale-inventory-analytics
 make setup           # Python deps (uv) and dbt packages
 make all             # generate synthetic data → load → dbt build (DuckDB)

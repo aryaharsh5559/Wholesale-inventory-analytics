@@ -8,9 +8,9 @@ which flows through a tested ELT pipeline into a free public dashboard that answ
 reorder, when, how much, and where cash is tied up in dead stock*, rebuilt automatically every
 night.
 
-**Try it:** [live dashboard](https://orginalbusta.github.io/Wholesale-inventory-analytics/) ·
-[what-if reorder policy](https://orginalbusta.github.io/Wholesale-inventory-analytics/what-if/) ·
-[dbt docs and lineage](https://orginalbusta.github.io/Wholesale-inventory-analytics/dbt-docs/)
+**Try it:** [live dashboard](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/) ·
+[what-if reorder policy](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/what-if/) ·
+[dbt docs and lineage](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/dbt-docs/)
 
 ```mermaid
 flowchart TD
