@@ -1,5 +1,7 @@
 # Craftstones Data Platform: An Ideal-State Redesign
 
+[![View the live dashboard](https://img.shields.io/badge/View%20the%20live%20dashboard-%E2%86%92-2ea44f?style=for-the-badge)](https://aryaharsh5559.github.io/Wholesale-inventory-analytics/)
+
 [![ci](https://github.com/aryaharsh5559/Wholesale-inventory-analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/aryaharsh5559/Wholesale-inventory-analytics/actions/workflows/ci.yml)
 [![deploy](https://github.com/aryaharsh5559/Wholesale-inventory-analytics/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/aryaharsh5559/Wholesale-inventory-analytics/actions/workflows/deploy-pages.yml)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
